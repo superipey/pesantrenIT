@@ -57,8 +57,8 @@
                             <label class="control-label col-sm-3">Jenis Kelamin</label>
                             <div class="col-lg-9">
                                 <div class="radio">
-                                    <label><input type="radio" name="jenis_kelamin" value="L" /> Laki-Laki</label>
-                                    <label><input type="radio" name="jenis_kelamin" value="P" /> Perempuan</label>
+                                    <label><input type="radio" name="jenis_kelamin" value="Pria" /> Pria</label>
+                                    <label><input type="radio" name="jenis_kelamin" value="Wanita" /> Wanita</label>
                                 </div>
                             </div>
                         </div>
