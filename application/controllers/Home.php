@@ -20,40 +20,11 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-        $this->load->model('muzaki_model');
-        $data['muzaki'] = $this->muzaki_model->read();
-            
-		$this->load->view('index', $data);
+		$this->load->view('peserta/index');
 	}
     
     public function create()
     {
-        $this->load->view('form');
-    }
-    
-    public function do_create()
-    {
-        $input = $this->input->post(NULL, TRUE);
-        
-        $this->load->model('muzaki_model');
-        $this->muzaki_model->create($input);
-        redirect('home');
-    }
-    
-    public function edit()
-    {
-        
-    }
-    
-    public function do_edit()
-    {
-        
-    }
-    
-    public function delete($id)
-    {
-        $this->load->model('muzaki_model');
-        $this->muzaki_model->delete("id = '$id'");
-        redirect('home');
+        $this->load->view('peserta/form');
     }
 }
